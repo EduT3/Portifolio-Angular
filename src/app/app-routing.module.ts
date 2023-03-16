@@ -10,9 +10,6 @@ const routes: Routes = [
     redirectTo: '/main',
     pathMatch:'full'
 
-  },  {
-    path:'**',
-    redirectTo: '/main',
   },
   {
     path:'main',
