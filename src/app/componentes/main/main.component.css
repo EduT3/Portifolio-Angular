@@ -59,6 +59,7 @@
   
   .apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
+    box-shadow: 0 0 20px var(--cor-secundaria);
   }
   
   .apresentacao__imagem {
