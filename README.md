@@ -6,7 +6,6 @@ Portifólio criado em angular
 | -------------  | --- |
 | :sparkles: Nome        | **Portifólio Angular**
 | :label: Tecnologias | ANGULAR, HTML, CSS, TypeScript (tecnologias utilizadas)
-| :rocket: URL         | https://url-deploy.com.br
-| :fire: Desafio     | https://url-do-desafio.com.br
+| :rocket: URL         | https://portifolio2-0-edut3.vercel.app/
 
 ![](https://raw.githubusercontent.com/EduT3/Portifolio-Angular/main/Capa.png#vitrinedev)
