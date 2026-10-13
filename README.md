@@ -1,10 +1,10 @@
 # Portifólio Angular
 
-Portifólio pessoal construído com Angular 15, TypeScript e CSS. A aplicação tem páginas de apresentação (`/main`) e sobre o autor (`/about`), com cabeçalho e rodapé reutilizáveis.
+Portifólio pessoal construído com Angular 20, TypeScript e CSS. A aplicação tem páginas de apresentação (`/main`) e sobre o autor (`/about`), com cabeçalho e rodapé reutilizáveis.
 
 ## Executar e verificar
 
-Use uma versão de Node compatível com Angular 15 e as dependências registradas no lockfile. Esta é uma base legada: uma atualização do framework exige validação separada.
+Use Node.js 24 e as dependências registradas no lockfile. Angular 20.3 é compatível com esse runtime; os componentes continuam organizados em NgModule.
 
 ```sh
 npm ci
