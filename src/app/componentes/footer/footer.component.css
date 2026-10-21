@@ -1,11 +1,21 @@
-.rodape {
-    padding: 24px;
-    color: var(--cor-primaria);
-    background-color: var(--cor-terciaria);
-    text-align: center;
-    font-family: var(--fonte-segundaria);
-    font-size: 1.5rem;
-  }
-  p:hover{
-    color: var(--cor-secundaria);
-  }
+.footer {
+  border-top: 1px solid var(--line);
+  padding-block: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem 2rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.footer p:first-child {
+  color: var(--ink);
+  font-weight: 600;
+}
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  gap: 0.4rem;
+}

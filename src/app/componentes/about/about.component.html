@@ -1,23 +1,86 @@
 <app-header></app-header>
-<main class="apresentacao">
-    <section class="apresentacao__conteudo">
-      <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-      <p class="apresentacao__conteudo__texto">
-        Este portifólio reúne meus estudos e experiências com desenvolvimento web,
-          com foco em interfaces claras, organização do código e aprendizado contínuo.
+<main id="conteudo" class="shell" tabindex="-1">
+  <section class="about-intro" aria-labelledby="titulo-sobre">
+    <p class="eyebrow">Minha trajetória</p>
+    <h1 id="titulo-sobre">
+      Do suporte técnico<br /><span>ao estudo de dados.</span>
+    </h1>
+    <p class="lead">
+      Sou Eduardo Paulo Tomilhero. Estou em transição para Engenharia de Dados e
+      BI, estudando SQL e Power BI e ampliando minha base em tecnologia.
+    </p>
+  </section>
+  <section class="section about-grid" aria-labelledby="titulo-experiencia">
+    <div>
+      <p class="eyebrow">Experiência profissional</p>
+      <h2 id="titulo-experiencia">Suporte técnico</h2>
+    </div>
+    <div class="experience">
+      <p class="eyebrow">Ago. 2024 — Set. 2026</p>
+      <h3>Analista de Suporte Júnior</h3>
+      <p class="company">Fortbras</p>
+      <p class="lead">
+        Experiência em suporte técnico que faz parte da minha trajetória em
+        tecnologia e da direção que estou construindo para a área de dados.
       </p>
-
-      <p class="apresentacao__conteudo__texto">
-        Aqui apresento exercícios de HTML, CSS e JavaScript e a evolução dos meus
-          conhecimentos em tecnologia. Os projetos documentam meu processo de aprendizagem.
+    </div>
+  </section>
+  <section class="section" aria-labelledby="titulo-tecnologias">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Conhecimento e prática</p>
+        <h2 id="titulo-tecnologias">Meu repertório</h2>
+      </div>
+    </div>
+    <div class="knowledge-grid">
+      <article>
+        <p class="eyebrow">Foco atual · Em estudo</p>
+        <h3>Dados e BI</h3>
+        <p>
+          SQL e Power BI, com prática de consultas, relações entre tabelas e
+          indicadores de negócio.
+        </p>
+        <ul class="tags" aria-label="Estudos atuais">
+          <li>SQL</li>
+          <li>SQLite</li>
+          <li>Power BI</li>
+        </ul>
+      </article>
+      <article>
+        <p class="eyebrow">Base anterior</p>
+        <h3>Desenvolvimento Front-End</h3>
+        <p>
+          Repertório em interfaces web com HTML, CSS/SCSS, TypeScript, Angular e
+          React.
+        </p>
+        <ul class="tags" aria-label="Base em Front-End">
+          <li>HTML</li>
+          <li>CSS / SCSS</li>
+          <li>TypeScript</li>
+          <li>Angular</li>
+          <li>React</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+  <section class="section next-step" aria-labelledby="titulo-pratica">
+    <div>
+      <p class="eyebrow">Aprendizado em andamento</p>
+      <h2 id="titulo-pratica">O caminho aparece na prática.</h2>
+      <p class="lead">
+        Os projetos e estudos registram minha evolução. Cada repositório traz
+        seu contexto e suas limitações.
       </p>
-
-      
-    </section>
-    <img
-      class="apresentacao__imagem"
-      src="./assets/ed.jpg"
-      alt="Eduardo com um óculos maneiro!"
-    />
-  </main>
-  <app-footer></app-footer>
+    </div>
+    <div class="actions">
+      <a class="button primary" routerLink="/main" fragment="projetos"
+        >Ver projetos</a
+      ><a
+        class="button"
+        href="https://www.linkedin.com/in/eduardo-paulo-tomilhero-bbb83b264/"
+        >Conversar no LinkedIn</a
+      >
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>

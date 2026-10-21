@@ -1,53 +1,59 @@
-.apresentacao {
-    padding: 5% 15%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 82px;
+.about-intro {
+  padding-block: 5rem;
+  display: grid;
+  gap: 1.7rem;
+}
+h1 span {
+  color: var(--green);
+}
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+}
+.about-grid h2 {
+  margin-top: 0.8rem;
+}
+.experience {
+  border-left: 2px solid var(--green);
+  padding-left: 2rem;
+  display: grid;
+  gap: 0.8rem;
+}
+.company {
+  color: var(--green);
+  font-weight: 600;
+}
+.knowledge-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.knowledge-grid article {
+  display: grid;
+  align-content: start;
+  gap: 1.2rem;
+}
+.knowledge-grid article > p:not(.eyebrow) {
+  color: var(--muted);
+}
+.next-step {
+  display: grid;
+  gap: 2rem;
+}
+.next-step h2 {
+  margin-block: 0.8rem 1rem;
+}
+@media (max-width: 700px) {
+  .about-intro {
+    padding-block: 3rem;
   }
-  
-  .apresentacao__conteudo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  .about-grid,
+  .knowledge-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-  
-  .apresentacao__conteudo__titulo {
-    font-size: 2.25rem;
-    font-family: var(--fonte-primaria);
-    color: var(--cor-terciaria);
+  .experience {
+    padding-left: 1.25rem;
   }
-  
-  .apresentacao__conteudo__texto {
-    font-size: 1.5rem;
-    font-family: var(--fonte-segundaria);
-  }
-  
-  .apresentacao__imagem {
-    width: 50%;
-    height: 50%;
-  }
-
-  @media (max-width: 1200px) {
-    .apresentacao {
-      flex-direction: column-reverse;
-      padding: 5%;
-    }
-  
-    .apresentacao__conteudo {
-      width: auto;
-    }
-  }
-.apresentacao { max-width: 1440px; margin: auto; gap: clamp(2rem, 5vw, 5rem); }
-.apresentacao__conteudo { flex: 1; min-width: 0; }
-.apresentacao__conteudo__titulo { font-size: clamp(1.6rem, 3vw, 2.25rem); line-height: 1.4; }
-.apresentacao__conteudo__texto { line-height: 1.65; }
-.apresentacao__imagem { width: min(40%, 400px); height: auto; border-radius: 1rem; }
-.apresentacao__links__navegacao { width: min(100%, 320px); align-items: center; }
-.apresentacao__links__navegacao img { width: 32px; height: 32px; object-fit: contain; }
-@media (max-width: 600px) {
-  .apresentacao__imagem { width: min(80%, 320px); }
-  .apresentacao__conteudo__texto { font-size: 1.125rem; }
-  .apresentacao__links__subtitulo { font-size: 1.2rem; }
 }

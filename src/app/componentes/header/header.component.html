@@ -1,6 +1,23 @@
-<header class="cabecalho">
-    <nav class="cabecalho__menu" aria-label="Navegação principal">
-        <a routerLink="/main" class="cabecalho__menu__link" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
-        <a routerLink="/about" class="cabecalho__menu__link" routerLinkActive="active" ariaCurrentWhenActive="page">Sobre mim</a>
-    </nav>
+<a class="skip-link" href="#conteudo" (click)="skipToContent($event)"
+  >Pular para o conteúdo</a
+>
+<header class="shell header">
+  <a class="brand" routerLink="/main" aria-label="Eduardo Tomilhero — início"
+    ><span aria-hidden="true">ET<span class="dot">.</span></span
+    ><span class="brand-name">Eduardo Tomilhero</span></a
+  >
+  <nav aria-label="Navegação principal">
+    <a routerLink="/main" routerLinkActive="active" ariaCurrentWhenActive="page"
+      >Início</a
+    >
+    <a
+      routerLink="/about"
+      routerLinkActive="active"
+      ariaCurrentWhenActive="page"
+      >Trajetória</a
+    >
+    <a href="https://github.com/EduT3"
+      >GitHub <span aria-hidden="true">↗</span></a
+    >
+  </nav>
 </header>

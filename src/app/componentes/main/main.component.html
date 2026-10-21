@@ -1,44 +1,145 @@
 <app-header></app-header>
-<main class="apresentacao">
-    <section class="apresentacao__conteudo">
-      <h1 class="apresentacao__conteudo__titulo">
-        Eleve seu negócio digital a outro nível
-        <strong class="tituloDestaque">com um Front-end de qualidade!</strong>
-      </h1>
-      <p class="apresentacao__conteudo__texto">
-        Olá! Sou Eduardo Paulo Tomilhero, desenvolvedor Front-end com Foco em
-        HTML, CSS e TypeScript(Angular). Quero ajudar empresas e designers a colocarem
-        em prática boas ideias. Vamos conversar?
+<main id="conteudo" tabindex="-1">
+  <section class="shell hero" aria-labelledby="apresentacao">
+    <div class="hero-copy">
+      <p class="eyebrow">Eduardo Paulo Tomilhero</p>
+      <h1 id="apresentacao">Uma nova direção.<br /><span>Dados e BI.</span></h1>
+      <p class="lead">
+        Estou direcionando minha carreira para Engenharia de Dados e BI, com SQL
+        e Power BI em estudo. Trago experiência em suporte técnico e uma base em
+        desenvolvimento Front-End.
       </p>
-      <div class="apresentacao__links">
-        <h2 class="apresentacao__links__subtitulo">Acesse Minhas Redes!</h2>
-        <a
-          class="apresentacao__links__navegacao"
-          href="https://github.com/EduT3"
+      <div class="actions">
+        <a class="button primary" routerLink="/main" fragment="projetos"
+          >Conhecer os projetos <span aria-hidden="true">&nbsp;↓</span></a
         >
-          <img src="./assets/github.png" alt="Logo GitHub" />
-          GitHub
-        </a>
-        <a
-          class="apresentacao__links__navegacao"
-          href="https://www.linkedin.com/in/eduardo-paulo-tomilhero-bbb83b264/"
-        >
-          <img src="./assets/linkedin.png" alt="Logo Linkedin" />
-          Linkedin
-        </a>
-        <a
-          class="apresentacao__links__navegacao"
-          href="https://twitter.com/EduTomilhero"
-        >
-          <img src="./assets/twitter.png" alt="Logo Twitter" />
-          Twitter
-        </a>
+        <a class="button" routerLink="/about">Minha trajetória</a>
       </div>
-    </section>
-    <img
-      class="apresentacao__imagem"
-      src="./assets/ed.jpg"
-      alt="Eduardo com um óculos maneiro!"
-    />
-  </main>
-  <app-footer></app-footer>
+    </div>
+    <aside class="study-note" aria-label="Meu foco de estudo atual">
+      <div class="note-top">
+        <span class="eyebrow">Caderno de estudo</span
+        ><span aria-hidden="true">↗</span>
+      </div>
+      <p class="note-title">Da pergunta<br />à leitura dos dados.</p>
+      <ol class="study-steps">
+        <li>
+          <span class="step-number" aria-hidden="true">01</span>
+          <div>
+            <strong>Consultar</strong><span>SQL · relações e agregações</span>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">02</span>
+          <div>
+            <strong>Entender</strong
+            ><span>Contexto · indicadores de negócio</span>
+          </div>
+        </li>
+        <li>
+          <span class="step-number" aria-hidden="true">03</span>
+          <div>
+            <strong>Comunicar</strong
+            ><span>Power BI · visualização em estudo</span>
+          </div>
+        </li>
+      </ol>
+      <p class="note-footer">
+        Aprendizado em andamento, com prática e documentação.
+      </p>
+    </aside>
+  </section>
+  <section
+    class="shell section"
+    id="projetos"
+    aria-labelledby="titulo-projetos"
+  >
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Prática e construção</p>
+        <h2 id="titulo-projetos">Projetos em foco</h2>
+      </div>
+      <p>
+        Do estudo de consultas à construção de interfaces. Código e contexto em
+        cada repositório.
+      </p>
+    </div>
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-top">
+          <span class="eyebrow">01 / Dados</span
+          ><span class="status">Projeto de estudo</span>
+        </div>
+        <h3>Ambiente de Estudo SQL</h3>
+        <p>
+          Laboratório no navegador com SQLite, base fictícia, exercícios e
+          cadernos de consulta. Um espaço para praticar SQL e explorar perguntas
+          de negócio.
+        </p>
+        <ul class="tags" aria-label="Tecnologias do Ambiente de Estudo SQL">
+          <li>SQL</li>
+          <li>SQLite</li>
+          <li>JavaScript</li>
+        </ul>
+        <a class="text-link" href="https://github.com/EduT3/sql-estudo"
+          >Explorar o estudo SQL <span aria-hidden="true">↗</span></a
+        >
+      </article>
+      <article class="project-card">
+        <div class="project-top">
+          <span class="eyebrow">02 / Web</span
+          ><span class="status">Projeto pessoal</span>
+        </div>
+        <h3>Bolsário</h3>
+        <p>
+          Aplicação de controle financeiro no navegador, com lançamentos,
+          orçamento e exportação de relatórios. Os dados ficam no armazenamento
+          local do navegador.
+        </p>
+        <ul class="tags" aria-label="Tecnologias do Bolsário">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <a class="text-link" href="https://github.com/EduT3/Bolsario"
+          >Conhecer o código do Bolsário <span aria-hidden="true">↗</span></a
+        >
+      </article>
+    </div>
+  </section>
+  <section class="shell section direction" aria-labelledby="titulo-direcao">
+    <div>
+      <p class="eyebrow">Repertório em evolução</p>
+      <h2 id="titulo-direcao">
+        Experiência que acompanha<br />o próximo passo.
+      </h2>
+    </div>
+    <div>
+      <p class="lead">
+        Minha trajetória passa por suporte técnico e desenvolvimento web. Agora,
+        concentro meus estudos em SQL, Power BI e fundamentos de dados.
+      </p>
+      <a class="text-link" routerLink="/about"
+        >Ver experiência e tecnologias <span aria-hidden="true">→</span></a
+      >
+    </div>
+  </section>
+  <section class="shell section contact" aria-labelledby="titulo-contato">
+    <p class="eyebrow">Contato</p>
+    <h2 id="titulo-contato">Vamos conversar?</h2>
+    <p class="lead">
+      Para trocar experiências e conversar sobre oportunidades em dados, BI e
+      tecnologia.
+    </p>
+    <div class="actions">
+      <a
+        class="button primary"
+        href="https://www.linkedin.com/in/eduardo-paulo-tomilhero-bbb83b264/"
+        >Conversar no LinkedIn <span aria-hidden="true">&nbsp;↗</span></a
+      ><a class="button" href="https://github.com/EduT3"
+        >Acompanhar no GitHub</a
+      >
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>
